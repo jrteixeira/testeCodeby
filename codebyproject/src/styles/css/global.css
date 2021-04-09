@@ -1,0 +1,276 @@
+/* Reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* All styles */
+@font-face {
+  font-family: poppins-regular;
+  src: url('../font/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url('../font/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: poppins-light;
+  src: url('../font/Poppins-Light.ttf');
+}
+.page-home .info-container a {
+  width: 100%;
+}
+.page-home .info-container button {
+  padding: 0.6rem;
+  background: #1df01d2b;
+  border: 1px solid #008e00;
+  border-radius: 5px;
+  color: #008e00;
+  font-family: 'poppins-regular';
+  width: inherit;
+}
+.page-home .info-container button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+.info-container p.title {
+  font-family: poppins-bold;
+  margin-top: auto;
+  margin-bottom: 10px;
+  column-gap: 10px;
+}
+.info-container p.title a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.page-home .info-container p.title a:hover {
+  cursor: pointer;
+  font-size: 15.3px;
+  transition: 0.02s;
+}
+.info-container p.old-price {
+  font-family: poppins-light;
+  font-size: small;
+  font-weight: 600;
+  color: #b4b4b4;
+}
+.page-home .info-container p.new-price {
+  font-family: poppins-regular;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+.info-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+.Title-page {
+  font-family: 'poppins-regular';
+  font-size: 1.5rem;
+}
+.page-home nav {
+  border-bottom: 1px solid #ccc;
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.page-home nav img {
+  max-width: 29px;
+  float: right;
+}
+.page-home nav img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+@media screen and (max-width: 999px) {
+  .product-container {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    padding: 1rem;
+    margin: auto;
+  }
+  .img-container {
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    max-height: 25vw;
+  }
+  .img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page-home .product-container {
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    padding: 1rem;
+    float: left;
+  }
+  .page-home .img-container {
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    max-height: 18vw;
+  }
+  .page-home .img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: flex;
+  }
+}
+
+/* Tooltip style */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #161616;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

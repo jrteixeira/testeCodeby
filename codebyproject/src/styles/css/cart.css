@@ -1,0 +1,123 @@
+.page-cart {
+  display: flex;
+  flex-direction: column;
+}
+.page-cart nav {
+  border-bottom: 1px solid #ccc;
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.page-cart nav .cart-title {
+  margin: auto;
+  font-family: 'poppins-bold';
+  font-size: x-large;
+}
+.page-cart nav a {
+  text-decoration: none;
+  font-family: 'poppins-regular';
+  width: fit-content;
+}
+.product-container {
+  display: flex;
+  flex-direction: row;
+  width: 80vw !important;
+  max-width: 500px;
+  padding: 1rem;
+  margin: inherit;
+}
+.img-container {
+  width: 40%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  max-height: 15vw;
+}
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.page-cart .info-container p.new-price {
+  font-family: poppins-regular;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.page-cart .info-container p.quantity {
+  font-family: poppins-regular;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+.page-cart .info-container a img:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+  cursor: pointer;
+}
+.page-cart footer {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.page-cart footer .absolut-footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 97vw;
+  margin: auto;
+  padding: 1.5rem 0rem;
+  justify-content: space-between;
+}
+.page-cart footer .footer-container p {
+  font-family: 'poppins-bold';
+  font-size: x-large;
+}
+.page-cart footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.page-cart footer p.msg {
+  margin: 1rem auto 1rem auto;
+  padding: 0.8rem 2rem;
+  border: 1px solid #a0ffa0;
+  border-radius: 27px;
+  background: #23ff005e;
+  color: #0c8e0c;
+  font-family: 'poppins-regular';
+  font-weight: bold;
+}
+.page-cart .msg-empty {
+  font-family: 'poppins-regular';
+  font-size: large;
+  margin: 1rem;
+}
+.page-cart footer button {
+  padding: 1rem 3rem;
+  margin: auto;
+  border: 1px solid #2185d0;
+  border-radius: 7px;
+  background: #2185d0;
+  color: white;
+  font-family: 'poppins-bold';
+  font-size: initial;
+  width: inherit;
+  max-width: 450px;
+}
+.page-cart footer button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+.page-cart .tooltip span:after {
+  content: '';
+  position: absolute;
+  bottom: auto;
+  left: 0%;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #16161a;
+  border-top: 8px solid transparent;
+}
