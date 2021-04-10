@@ -3,7 +3,7 @@ Teste de admissão para Codeby
 
 Projeto realizado utilizando React.js
 
-Todos foram respeitados (Pagina do carrinho de compras)
+Todos os requisitos foram respeitados (Pagina do carrinho de compras)
 
 ### paginas acrescentadas:
 - Pagina Home (Mostrando todos os produtos disponiveis)
