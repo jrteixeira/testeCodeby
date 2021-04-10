@@ -89,17 +89,52 @@ const Product = () => {
                     <p className="old-price">R$ {Oldprice}</p>
                     <p className="new-price">R$ {price}</p>
                     <label>Quantidade</label>
-                    <input
-                      type="number"
-                      placeholder="1"
-                      min={obj.quantity}
-                      onChange={({ target }) => {
-                        setQtd(target.value);
-                      }}
-                      value={qtd}
-                    ></input>
+                    <div className="number-input">
+                      <button
+                        onClick={({ target }) => {
+                          var number;
+                          number = target.parentNode.querySelector(
+                            'input[type=number]',
+                          ).value;
+                          if (parseInt(number) > 1) {
+                            target.parentNode.querySelector(
+                              'input[type=number]',
+                            ).value = parseInt(number) - 1;
+                            setQtd(parseInt(number) - 1);
+                          }
+                        }}
+                      ></button>
+                      <input
+                        className="quantity"
+                        type="number"
+                        name="quantity"
+                        placeholder="1"
+                        min="1"
+                        onChange={({ target }) => {
+                          debugger;
+                          setQtd(target.value);
+                        }}
+                        value={qtd}
+                      ></input>
+                      <button
+                        onClick={({ target }) => {
+                          var number;
+                          number = target.parentNode.querySelector(
+                            'input[type=number]',
+                          ).value;
+                          target.parentNode.querySelector(
+                            'input[type=number]',
+                          ).value = parseInt(number) + 1;
+                          setQtd(parseInt(number) + 1);
+                        }}
+                        className="plus"
+                      ></button>
+                    </div>
+
                     <Link to="/cart">
-                      <button onClick={addCart}>Adicionar ao carrinho</button>
+                      <button className="buy" onClick={addCart}>
+                        Adicionar ao carrinho
+                      </button>
                     </Link>
                   </div>
                 </div>

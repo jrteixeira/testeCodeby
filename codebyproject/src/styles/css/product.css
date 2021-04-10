@@ -35,7 +35,7 @@
   padding-top: 1rem;
 }
 
-.page-products .info-container button {
+.page-products .info-container button.buy {
   margin-top: 1rem;
   width: fit-content;
   padding: 0.7rem 3rem;
@@ -69,7 +69,7 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
-.page-products .info-container button {
+.page-products .info-container button.buy {
   padding: 0.6rem;
   background: #1df01d2b;
   border: 1px solid #008e00;
@@ -78,8 +78,78 @@
   font-family: 'poppins-regular';
   width: inherit;
 }
-.page-products .info-container button:hover {
+.page-products .info-container button.buy:hover {
   cursor: pointer;
   transform: scale(1.02);
   transition: 0.1s;
+}
+.page-products .info-container p.title {
+  font-size: larger;
+}
+
+/* Css input number */
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  width: fit-content;
+  border: 1px solid #ddd;
+  display: inline-flex;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 0.7rem;
+  height: 2px;
+  background-color: #212121;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type='number'] {
+  font-family: 'poppins-regular';
+  max-width: 5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  font-size: 1.2rem;
+  height: 2rem;
+  font-weight: bold;
+  margin: 0%;
+  text-align: center;
 }
